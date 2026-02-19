@@ -13,6 +13,6 @@ async function fetchPosts(): Promise<Post[]> {
   return response.data;
 }
 
-fetchPosts().then((posts) => {
+fetchPosts().then((posts: Post[]) => {
   console.log(posts[0].title);
 });

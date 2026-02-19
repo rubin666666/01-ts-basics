@@ -6,4 +6,5 @@ getFirstElement<number>([1, 2, 3]);
 getFirstElement<string>(["a", "b", "c"]);
 getFirstElement<boolean>([true, false, true]);
 
-// getFirstElement<number>([1, "2", 3]);
+// ❌ TypeScript не дозволить таке:
+// getFirstElement<number>([1, "a", 3]);
